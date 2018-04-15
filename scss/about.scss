@@ -1,0 +1,232 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+// @include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-xy-grid-classes;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+// @include foundation-float-classes;
+@include foundation-flex-classes;
+
+// @include foundation-prototype-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+
+body {
+}
+
+#menu {
+	position: fixed;
+	bottom: -20px;
+	z-index: 100;
+	left: 5rem;
+}
+
+.button.large {
+	font-size: 1.5rem;
+	border-radius: 10% 10% 0 0;
+}
+
+#bottom {
+
+	margin-left: 200px;
+
+	@media screen and (max-width: 640px) {
+		width: 90vw;
+		margin-left: 30px;
+	}
+
+	@media screen and (min-width: 640px) and (max-width: 1023px) {
+		width: 60vw;
+	}
+
+	@media screen and (min-width: 1023px) {
+		width: 60vw;
+	}
+}
+
+ul.custom-bullet {
+	list-style: none;
+}
+
+ul {
+	display: inline-block;
+}
+
+ul.custom-bullet > li:before {
+	content: "";
+	height: 2em;
+	width: 4em;
+	display: block;
+	float: left;
+	margin-top: .25em;
+	margin-left: -1.3em;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+ul.red-fish > li:before {
+	background-image: url("../img/red-fish.svg");
+	background-size: 60%;
+	background-position: center;
+	transition: background-size 0.3s;
+	-webkit-transition: background-size 0.3s;
+}
+
+ul.blue-fish > li:before {
+	background-image: url("../img/blue-fish.svg");
+	background-size: 60%;
+	background-position: center;
+	transition: background-size 0.3s;
+	-webkit-transition: background-size 0.3s;
+}
+
+.callout.primary {
+	background-color: rgba(207, 59, 73, .25);
+} 
+.callout.secondary {
+	background-color: rgba(65, 155, 189, .25);
+}
+.callout.success {
+	background-color: rgba(122, 169, 88, .25);
+}
+.callout.warning {
+	background-color: rgba(252, 206, 61, .25);
+}
+.callout.alert {
+	background-color: rgba(247, 154, 110, .25);
+}
+
+.news-container {
+	@media screen and (max-width: 640px) {
+		width: 90vw;
+	}
+
+	@media screen and (min-width: 640px) and (max-width: 1023px) {
+		width: 70vw;
+	}
+
+	@media screen and (min-width: 1023px) {
+		margin-left: 100px;
+		width: 60vw;
+	}
+
+}
+
+.position-bottom {
+	@media screen and (max-width: 640px) {
+		height: 500px;
+	}
+
+	@media screen and (min-width: 640px) and (max-width: 1023px) {
+		height: 500px;
+	}
+
+	@media screen and (min-width: 1023px) {
+		height: 350px;
+	}
+}
+
+.img-profile {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+
+h1 {
+	font-family: impact, helvetica, sans-serif;
+	font-size: 3rem;
+	line-height: 1.2;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: impact, helvetica, sans-serif;
+	font-size: 2rem;
+	line-height: 1.5;
+	font-weight: bold;	
+}
+
+h5 {
+	font-family: garamond, verdana, sans-serif;
+	line-height: 1;
+}
+
+p {
+	font-family: garamond, helvetica, sans-serif;
+	line-height: 1.75;
+}
+
+.grid-x {
+	margin-top: 15px;
+}
+
+.badge {
+	margin-bottom: 15px;
+}
+
+.footer {
+	margin-bottom: 30px;
+}
+
+.logo {
+	margin-top: 30px;
+}
+
+.button {
+	border-radius: .3rem;
+}
+
+.cell {
+	margin-top: 5px;
+}
+
+.noncallout {
+	position: relative;
+	margin: 0 0 1rem 0;
+	padding: 1rem;
+	border-radius: 0;
+	color: #0a0a0a;
+	font-size: 1.1rem;
+}
